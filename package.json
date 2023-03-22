@@ -1,0 +1,16 @@
+{
+  "name": "movie-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon back-end/server.js"
+  },
+  "author": "Daniel Heredia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
