@@ -15,10 +15,6 @@ connectDB();
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("API is runnung");
-});
-
 app.use("/api/users", userRoutes);
 
 app.use("/api/movies", movieRoutes);
@@ -27,16 +23,16 @@ app.use("/api/config/movies", configRoutes);
 
 const __dirname = path.resolve();
 
-if (process.env.NODE_ENV === "development") {
-   app.get("/", (req, res) => {
-    res.send("API is running");
-  });
-} else {
- app.use(express.static(path.join(__dirname, "/front-end/build")));
+if (process.env.NODE_ENV === "production") {
+   app.use(express.static(path.join(__dirname, "/front-end/build")));
 
   app.get("*", (req, res) =>
     res.sendFile(path.resolve(__dirname, "front-end", "build", "index.html"))
   );
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running");
+  });
 }
 
 app.use(notFound);
