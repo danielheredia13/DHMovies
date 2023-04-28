@@ -1,0 +1,23 @@
+/* Variables */
+
+:root {
+  --bg-color: #151b27;
+  --navbar-bg-color: #242c3a;
+  --font-color: #dddddd;
+  --font-color-navbar-hover: rgb(226, 226, 226);
+  --btn-bg-color: #333333;
+  --btn-bg-color-hover: #424242;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  max-width: 1280px;
+  margin: 0 auto;
+}

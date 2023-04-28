@@ -1,0 +1,66 @@
+/* Profile Screen*/
+
+.profile-wrap {
+  height: 110vh;
+}
+
+.profile-title {
+  width: 80vw;
+  max-width: 1280px;
+  margin-left: 50px;
+  padding-top: 20px;
+  color: var(--font-color);
+  font-weight: 600;
+}
+.profile-box {
+  width: 80vw;
+  max-width: 1280px;
+  margin: 20px auto 0;
+  display: flex;
+  color: var(--font-color);
+}
+
+.user-info-box {
+  margin-left: 20px;
+}
+
+.profile-movies-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.profile-movies-box h2 {
+  align-self: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.user-favorite-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+@media (max-width: 550px) {
+  .profile-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile-info-box {
+    align-self: center;
+  }
+  .profile-movies-box {
+    margin: 10px auto;
+  }
+
+  .profile-movies-box h2 {
+    margin-top: 15px;
+  }
+
+  .user-favorite-box {
+    justify-content: center;
+  }
+}

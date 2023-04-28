@@ -1,0 +1,25 @@
+/*Similar Movie Card*/
+
+.similar-wrap {
+  width: 100px;
+  transition: 0.2s ease-out;
+}
+
+.similar-wrap:hover {
+  cursor: pointer;
+}
+
+.similar-wrap img {
+  width: 100px;
+  transition: 0.2s ease-out;
+}
+
+.similar-wrap img:hover {
+  box-shadow: 1px 1px 3px 1px rgb(255, 255, 255);
+}
+
+.similar-wrap h5 {
+  font-weight: 500;
+  color: aliceblue;
+  text-decoration: underline #151b27;
+}

@@ -1,0 +1,65 @@
+/* Navigation Bar */
+
+.nav-container {
+  margin: 0px;
+}
+
+.navbar-wrap {
+  height: 40px;
+  background-color: var(--navbar-bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5px 20px;
+}
+
+.nav-brand {
+  align-self: center;
+  justify-self: center;
+  font-weight: 600;
+  color: var(--font-color);
+  text-decoration: underline var(--navbar-bg-color);
+}
+
+.nav-brand:hover {
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--font-color-navbar-hover);
+}
+
+.sign-in {
+  font-weight: 500;
+  color: var(--font-color);
+  text-decoration: underline var(--navbar-bg-color);
+}
+
+.sign-in:hover {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--font-color-navbar-hover);
+}
+
+.user-name-header {
+  display: inline;
+  padding-right: 10px;
+  font-weight: 600;
+  color: var(--font-color);
+  text-decoration: underline var(--navbar-bg-color);
+}
+
+.user-name-header:hover {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--font-color-navbar-hover);
+}
+.logout-header {
+  display: inline;
+  font-size: 13px;
+}
+
+.logout-header:hover {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--font-color-navbar-hover);
+}

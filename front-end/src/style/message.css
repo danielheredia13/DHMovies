@@ -1,0 +1,16 @@
+/*Message*/
+
+.message-box {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 8px;
+}

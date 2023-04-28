@@ -1,0 +1,126 @@
+/* Movie Details Screen */
+
+.section-movie-details {
+  text-align: center;
+  color: #e9e9e9;
+}
+
+.section-movie-details h2 {
+  margin: 20px auto 0;
+}
+
+.section-movie-details span {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.movie-details-box {
+  position: relative;
+  width: 80vw;
+  max-width: 1280px;
+  margin: 30px auto;
+  display: flex;
+  text-align: start;
+}
+
+.movie-info-box {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.movie-info-box h5 {
+  margin: 0 0 0px 0;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.movie-info-box p {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  color: #c9c9c9;
+}
+
+.movie-details-white-star {
+  position: absolute;
+  right: 10px;
+  bottom: -60px;
+  font-size: 15px;
+  font-weight: 600;
+  filter: saturate(0);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--font-color);
+  background-color: var(--btn-bg-color);
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s ease-out;
+}
+
+.movie-details-white-star:hover {
+  background-color: var(--btn-bg-color-hover);
+  cursor: pointer;
+}
+
+.movie-details-yellow-star {
+  position: absolute;
+  right: 10px;
+  bottom: -60px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: var(--font-color);
+  background-color: var(--btn-bg-color);
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s ease-out;
+}
+
+.movie-details-yellow-star:hover {
+  background-color: var(--btn-bg-color-hover);
+  cursor: pointer;
+}
+
+.cast-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: var(--btn-bg-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s ease-out;
+}
+
+.cast-btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-bg-color-hover);
+}
+
+/* Similar Movies */
+
+.similar-box {
+  width: 80vw;
+  max-width: 1280px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .movie-details-box {
+    flex-wrap: wrap;
+  }
+
+  .movie-details-box img {
+    margin: 0 auto;
+  }
+}

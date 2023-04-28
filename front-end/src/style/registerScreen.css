@@ -1,0 +1,65 @@
+/* Register Screen and Login Screen */
+
+.register-box {
+  width: 500px;
+  height: 80vh;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #e4e4e4;
+}
+
+.register-box h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register-form input {
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.subscribe-btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  align-self: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--font-color);
+  background-color: var(--btn-bg-color);
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s ease-out;
+}
+
+.subscribe-btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-bg-color-hover);
+}
+
+.register-span {
+  color: white;
+  text-decoration: underline var(--bg-color);
+}
+
+.register-span:hover {
+  font-weight: 600;
+}
